@@ -11,8 +11,13 @@ const navItems = [
 
 function App() {
   return (
-    <div className="">
-      <SideBar navItems={navItems} />
+    <div className="flex">
+      <div>
+        <SideBar navItems={navItems} />
+      </div>
+      <div className="max-h-screen mx-10 mt-5 overflow-auto">
+        <p className="text-2xl text-black">Hello</p>
+      </div>
     </div>
   );
 }

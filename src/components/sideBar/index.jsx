@@ -53,8 +53,8 @@ const SideBar = ({ navItems }) => {
         </div>
       </div>
       {/* Toggle */}
-      <button onClick={updateNavState} className="text p-3 hover:scale-[0.98] transition self-end">
-        {visible ? <RiMenuFoldFill size={25} /> : <RiMenuUnfoldFill size={25} />}
+      <button onClick={updateNavState} className="text-white p-3 hover:scale-[0.98] transition self-end">
+        {visible ? <RiMenuFoldFill size={26} /> : <RiMenuUnfoldFill size={25} />}
       </button>
     </div>
   );

@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { SideBar } from './components';
+import { AiOutlineDashboard, AiOutlineContainer, AiOutlineTeam, AiOutlineMail, AiOutlineContacts } from 'react-icons/ai';
+
+const navItems = [
+  { href: '/admin', icon: AiOutlineDashboard, label: 'dashboard' },
+  { href: '/posts', icon: AiOutlineContainer, label: 'dashboard' },
+  { href: '/users', icon: AiOutlineTeam, label: 'dashboard' },
+  { href: '/comments', icon: AiOutlineMail, label: 'dashboard' },
+  { href: '/contacts', icon: AiOutlineContacts, label: 'contacts' },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <SideBar navItems={navItems} />
     </div>
   );
 }
